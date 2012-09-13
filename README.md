@@ -1,0 +1,4 @@
+jQuery-BooDialog
+================
+
+jquery dialog
