@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	<title>jQuery BooDialog</title>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="src/jquery.boodialog.js"></script>
+	<style type="text/css">
+	/* BOO WINDOW MANAGER*/
+
+	#boo_window{
+	    background: #fdfdfd;
+	    position: absolute;
+	    top: 50px;
+	    box-shadow: 0 0 7px #333;
+	    border-radius: 3px;
+	    z-index: 1000;
+	}
+
+	#boo_window_content {
+	    padding: 25px;
+	    overflow: hidden;
+	}
+
+	#boo_window_content p {
+		margin: 10px;
+	}
+
+	#boo_window_close{
+	    background: #ECB4E6;
+	    color: white;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    text-decoration: none;
+	    padding: 4px;
+	    border-bottom-left-radius: 3px;
+	    border-top-right-radius: 3px;
+	    display:block;
+	}
+
+	#boo_window_close:hover{
+	    background: #75A8AA;
+	}
+
+	#boo_window #dialog_buttons {
+	    padding: 10px;
+	    text-align: right;
+	}
+
+	#boo_window h1 {
+	    margin: 10px 0;
+	}
+
+	#boo_window p, #boo_window h1 {
+		margin: 10px;
+	}
+
+	</style>
+</head>
+<body>
+	<a href="#">test</a>
+</body>
+
+	<script type="text/javascript">
+		$('a').click(function(e){
+			e.preventDefault();
+			$('body').booDialog({
+				title: 'Boo!',
+				text: 'Hey Ho from booDialog!'
+			});
+		});
+	</script>
+
+
+</html>
